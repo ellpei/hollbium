@@ -1,2 +1,2 @@
 # hollbium
-Company website
+Company website built with AngularJS
