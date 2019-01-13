@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
+import { SubsectionComponent } from './subsection/subsection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopMenuComponent
+    TopMenuComponent,
+    SubsectionComponent
   ],
   imports: [
     BrowserModule,
