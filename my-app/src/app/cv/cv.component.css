@@ -1,0 +1,16 @@
+
+.person {
+  flex: 1;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #98aa8a;
+}
