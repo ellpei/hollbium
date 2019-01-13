@@ -1,7 +1,7 @@
 
 .person {
   flex: 1;
-  padding: 1em;
+  padding: 2px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -13,4 +13,8 @@
   flex-wrap: wrap;
   flex-direction: row;
   background-color: #98aa8a;
+}
+
+p {
+  margin: 0% 0% 0% 0%;
 }
