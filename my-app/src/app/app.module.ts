@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MissionComponent } from './mission/mission.component';
 import { CvComponent } from './cv/cv.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     MissionComponent,
     CvComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
