@@ -2,11 +2,7 @@
     <div class="container">
       <img src="/assets/Images/logo.svg" alt="Hollbium">
         <ul class="nav navbar-nav" routerLinkActive="active">
-            <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="about">About</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="contact">Contact Us</a></li>
+            <li class="nav-item" *ngFor="let page of pages"><a class="nav-link" ng-click="gotoAnchor(page)">{{page}}</a></li>
         </ul>
     </div>
-
 </nav>
-<router-outlet></router-outlet>

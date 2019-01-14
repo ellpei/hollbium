@@ -1,10 +1,12 @@
 
 .container {
   background-image: url("/assets/Images/city.jpg");
-  height: 400px;
+  height: inherit;
   background-size: cover;
 }
 .text-container {
   color: rgb(65,64,66);
   background-color: rgb(255,255,255); opacity: 0.7;
+  height: inherit;
+  width: 50%;
 }

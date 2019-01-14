@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopMenuComponent implements OnInit {
 
+  title = 'navbar';
+  pages = ['Home', 'Mission', 'How we get there', 'About', 'Contact Us']
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }
