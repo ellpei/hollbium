@@ -2,24 +2,65 @@ html {
   min-height: 100vh;
   height: 100vh;
   width: inherit;
+  margin: 0px;
+  scroll-behavior: smooth;
 }
 
 .header {
   padding-top: 50px;
   min-height: 100vh;
   height: 100vh;
-  width: inherit;
+  max-width: inherit;
   align-self: center;
   display: block;
-  background-image: url("assets/Images/blad.jpg");
+  background: url("assets/Images/flower.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+.footer {
+  background-color: #98aa8a;
+  min-height: 300px;
+}
+
+.footcolumn {
+  padding: 10px;
+  width: 50%;
+}
+
+.mission {
+  min-height: inherit;
+  max-width: inherit;
+  align-self: center;
+  text-align: center;
+  position: relative;
+
+  display: block;
+  background: url("assets/Images/productive.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.missiontext {
+  background-color: rgb(0,0,0, 0.8);
+  max-width: 1000px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-top: 50px;
+}
 .page {
   min-height: 100vh;
   height: 100vh;
-  background-color: rgb(0,0,0, 0.3);
-  overflow: hidden;
-  display: block;
+  /*background-color: rgb(0,0,0, 0.3);*/
+  display: table-row;
 }
 
 .about {
@@ -61,6 +102,7 @@ body {
   color: #ffffff;
   font-size: 24px;
   float: none;
+  margin: 0px;
 }
 
 h1 {
@@ -69,7 +111,7 @@ h1 {
 }
 
 h2 {
-  padding-top: 10px;
+  /*padding-top: 50px;*/
 }
 
 p {
