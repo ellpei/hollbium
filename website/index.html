@@ -96,7 +96,7 @@
         <div style="height: 30px; width: 100%"></div>
         <h2>Contact Us</h2>
         <div class="contact-container">
-          <form role="form" method="post" id="contact-form" onsubmit="return validate()">
+          <form role="form" method="post" id="contact-form" name="contact-form" onsubmit="return validate()">
             <div class="row">
               <div class="col-sm-6 form-group">
                 <label for="name">Your name:</label>
@@ -183,7 +183,23 @@ function validate() {
   alert(email);
   alert(message);
 
-
+  $("#returnmessage").empty(); // To empty previous error/success message.
+  // Checking for blank fields.
+  if (name == '' || email == '') {
+    alert("Please Fill Required Fields");
+  } else {
+    // Returns successful data submission message when the entered information is stored in database.
+    $.post("contact.php", {
+    name1: name,
+    email1: email,
+    message1: message,
+    }, function(data) {
+      $("#returnmessage").append(data); // Append returned message to message paragraph.
+      if (data == "Your Query has been received, We will contact you soon.") {
+        $("#form")[0].reset(); // To reset form fields on success.
+      }
+      });
+    }
 
   return true;
 }
