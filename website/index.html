@@ -2,7 +2,7 @@
   <title>Hollbium</title>
   <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/Images/Hollbium_logo_darkgreen.svg" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/Images/leaf-42.png" />
 </head>
 <body>
   <div style="text-align:center">
@@ -16,48 +16,50 @@
               <li class="nav-item"><a href="#mission" class="nav-link">Mission</a></li>
               <li class="nav-item"><a href="#how" class="nav-link">How we get there</a></li>
               <li class="nav-item"><a href="#about"class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#team"class="nav-link">Team</a></li>
               <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
           </ul>
       </div>
     </nav>
     <div class="content">
+      <div style="height: 30px; width: 100%">
+      </div>
       <div class="page">
         <div class="header" id="home">
           <h1>Hollbium</h1>
-          <img src="assets/Images/Hollbium_logo_white.svg" height="200px" align="center">
-        </div>
-      </div>
-      <div class="page" id="mission">
-
-          <h2>Our Mission</h2>
-
-          <div class="mission">
-            <div class="missiontext">
-              <p>
-                Our mission is to offer designed tech solutions that revolutionizes the relationship between urban vertical farming, sustainability and well being. We focus on service excellence to provide solutions that meets the specific needs of our customers.</p>
+          <div id="logo">
+          <img src="assets/Images/logo.svg">
           </div>
         </div>
       </div>
+      <div class="page" id="mission">
+        <div style="height: 30px; width: 100%"></div>
+        <div class="mission">
+          <h2>Our Mission</h2>
+              <p>Our mission is to offer designed tech solutions that revolutionizes the relationship between urban vertical farming, sustainability and well being. We focus on service excellence to provide solutions that meets the specific needs of our customers.</p>
+        </div>
+      </div>
       <div class="page" id="how">
+        <div style="height: 30px; width: 100%"></div>
         <h2>How we get there</h2>
         <p>Blabla</p>
       </div>
-      <div class="page">
-        <div class="about">
+      <div class="page" id="about">
+          <div style="height: 30px; width: 100%"></div>
           <div class="text-container">
             <h2>About Us</h2>
             <p>Starting out in a basement in the suburbs of Stockholm, we are an out-of-the-box startup. We are passionate about the intersection of design, technology and urban farming. We are a sustainable business that delivers designed vertical farming tailored for urban spaces, mainly indoors. We believe that through each square meter of unused vertical space that we conquer, we directly help businesses to become the game changers in the battle towards a more sustainable and locally sourced food production. At the same time, we work toward improving the well-being and quality of life in urban spaces.
             </p>
           </div>
-        </div>
       </div>
-      <div class="page" id="about">
+      <div class="page" id="team">
+        <div style="height: 30px; width: 100%"></div>
         <div class="container">
           <h2>Who is Hollbium?</h2>
           <div class="people">
             <div class="person">
               <img src="assets/Images/dp.jpg">
-              <h5>Name, title</h5>
+              <h3>Name, title</h3>
               <p>
                 blablabla
               </p>
@@ -65,7 +67,7 @@
             </div>
             <div class="person">
               <img src="assets/Images/dp.jpg">
-              <h5>Name, title</h5>
+              <h3>Name, title</h3>
               <p>
                 blablabla
               </p>
@@ -73,7 +75,7 @@
             </div>
             <div class="person">
               <img src="assets/Images/dp.jpg">
-              <h5>Name, title</h5>
+              <h3>Name, title</h3>
               <p>
                 blablabla
               </p>
@@ -81,7 +83,7 @@
             </div>
             <div class="person">
               <img src="assets/Images/dp.jpg">
-              <h5>Name, title</h5>
+              <h3>Name, title</h3>
               <p>
                 blablabla
               </p>
@@ -91,23 +93,55 @@
         </div>
       </div>
       <div class="page" id="contact">
+        <div style="height: 30px; width: 100%"></div>
         <h2>Contact Us</h2>
+        <div class="contact-container">
+          <form role="form" method="post" id="contact-form" onsubmit="return validate()">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label for="name">Your name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+            </div>
+            <div class="col-sm-6 form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" type="textarea" name="message" maxlength="6000" rows="8" cols="80"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button type="submit" class="btn btn-lg btn-default pull-right">Send</button>
+              </div>
+            </div>
+          </form>
+          <div id="success_message" style="width:100%; height:100%; display:none;">
+            <h3>Your message has been sent! We will get back to you soon :)</h3>
+          </div>
+          <div id="error_message" style="width:100%; height:100%; display:none;">
+            <h3>An error occurred :( Please email us at info@hollbium.com directly</h3>
+          </div>
+        </div>
         <p>Contact form</p>
       </div>
       <div class="footer">
-        <div class="footcolumn" style="float=left">
+        <div class="line"></div>
+        <div class="footcolumn" style="float:left">
           column 1 <br/>
           column 1 <br/>
           column 1 <br/>
           column 1 <br/>
         </div>
-        <div class="footcolumn" style="float=right">
+        <div class="footcolumn" style="float:right">
           column 2 <br/>
           column 2 <br/>
           column 2 <br/>
           column 2 <br/>
         </div>
-        <p>footer</p>
       </div>
     </div>
 
@@ -138,4 +172,20 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+function validate() {
+  alert("validate");
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var message = $.trim($("#message").val());
+
+  alert(name);
+  alert(email);
+  alert(message);
+
+
+
+  return true;
+}
+
 </script>
