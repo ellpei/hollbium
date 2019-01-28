@@ -18,7 +18,7 @@ html {
   width: 100%;
   align-self: center;
   display: block;
-  background: url("assets/Images/flower.jpg") no-repeat center center fixed;
+  background: url("assets/Images/hollbiuminleaves3.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,9 +47,8 @@ button:active {
 }
 
 #logo {
-  height: 500px;
+  height: 100px;
   text-align: center;
-  vertical-align:middle;
 }
 
 .line {
@@ -67,14 +66,14 @@ button:active {
   float:left;
   width: 50%;
 }
+/*
+#imagestrip {
+  background: url("assets/Images/sthlmgreen_wide.jpg") no-repeat center center;
 
-#howimg {
-  height: inherit;
-  background: url("assets/Images/sthlmgreen.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 .mission {
   min-height: inherit;
@@ -120,6 +119,15 @@ button:active {
   flex-wrap: wrap;
   flex-direction: row;
 }
+.column {
+  float: left;
+  width: 33.33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 body {
   font-family: 'Quicksand Book', Verdana, Geneva, sans-serif;
@@ -157,6 +165,11 @@ h4 {
 p {
   margin: 0% 10% 5% 10%;
   font-size: 28px;
+}
+
+.quote {
+  font-size: 24px;
+  font-style: italic;
 }
 
 nav {
@@ -217,6 +230,30 @@ img .person {
   height: inherit;
   padding-left: 10px;
   vertical-align: top;
+}
+
+.credit {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 @font-face {
