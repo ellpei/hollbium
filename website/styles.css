@@ -12,7 +12,7 @@ html {
 
 .header {
   padding-top: 50px;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   height: 100vh;
   max-width: inherit;
   width: 100%;
@@ -119,10 +119,42 @@ button:active {
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+.row-problem {
+  background-image: url("assets/Images/shopping_bag.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: inherit;
+  color: #4e5b4a;
+}
+
+.row {
+  width: inherit;
+}
+
+.column-problem {
+  float: left;
+  width: 20%;
+}
+
 .column {
   float: left;
   width: 33.33%;
 }
+
+.column-img {
+  float: left;
+  width: 35%;
+}
+.row-problem:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .row:after {
   content: "";
   display: table;
@@ -164,7 +196,7 @@ h4 {
 
 p {
   margin: 0% 10% 5% 10%;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .quote {
