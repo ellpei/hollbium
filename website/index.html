@@ -6,21 +6,22 @@
 </head>
 <body>
   <div style="text-align:center">
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="navcontainer">
         <div class="minilogo">
           <img src="assets/Images/logo.svg" alt="Hollbium">
         </div>
-          <ul class="nav navbar-nav" routerLinkActive="active">
+          <ul class="nav navbar-nav" id="big-nav" routerLinkActive="active">
               <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="#problem" class="nav-link">Our problem with food</a></li>
               <li class="nav-item"><a href="#mission" class="nav-link">Mission</a></li>
               <li class="nav-item"><a href="#how" class="nav-link">How Hollbium helps</a></li>
-
               <li class="nav-item"><a href="#about"class="nav-link">About</a></li>
               <li class="nav-item"><a href="#team"class="nav-link">Team</a></li>
               <li class="nav-item"><a href="#contact" class="nav-link">Get in touch</a></li>
           </ul>
+          <!-- <a href="javascript:void(0);" class="menu-icon" id="small-nav" onclick="myFunction()"><img src="assets/Icons/menu.svg" alt="Menu" width="50px"></a>
+            <div id="dropdown" class="dropdown-content"></div> -->
       </div>
     </nav>
     <div class="content">
@@ -36,15 +37,18 @@
         <div class="problem">
         <h2>"Most of my food has travelled more in its lifetime than I have in mine”</h2>
         <div class="row-problem">
-          <div class="column-img">
-            <p></p>
+          <div class="column-problem">
+            <img src="assets/Images/shopping_bag.jpg" alt="" width="90%">
           </div>
           <div class="column-problem">
             <br/>
             <img src="assets/Icons/icon-08.svg" alt="" width="150px">
             <p>
               <br/>
-              By 2050, it's projected that 68% of the world's population will live in urban areas. Soon, there will be fewer people farming the land (and also the land itself) than there are people to feed. Traditional agriculture systems are less and less reliable due to its high freshwater consumption and exposure to climate change.
+              By 2050, it's projected that 68% of the world's population will live in urban areas. Soon, there will be fewer people farming the land (and also the land itself) than there are people to feed.
+              <br/>
+              <br/>
+              Traditional agriculture systems are less and less reliable due to its high freshwater consumption and exposure to climate change.
             </p>
           </div>
           <div class="column-problem">
@@ -63,7 +67,8 @@
           <img src="assets/Icons/icon-10.svg" alt="" width="150px">
           <p>
             <br/>
-            We are increasingly aware of the consequences of our modern relationship with food. We like to have access to non-native fruits and vegetables all-year-round. This habit will put more strain into the food supply chain as urbanization increases. Though wellbeing is high in the Nordics, we spend a lot of time indoors which affects our health.
+            We are increasingly aware of the consequences of our modern relationship with food. We like to have access to non-native fruits and vegetables all-year-round.
+            This habit will put more strain into the food supply chain as urbanization increases. Though well-being is high in the Nordics, we spend a lot of time indoors which affects our health
           </p>
           </div>
           <div class="column"></div>
@@ -84,11 +89,10 @@
           <h2>How Hollbium helps</h2>
           <h3>At Hollbium, we design experiences, not products</h3>
           <p>
-            When we bring a product into this world, we are responsible for ensuring it meets a genuine human need while minimizing the impact it has on the planet. We provide a wall-hung vertical product that grows food indoors. Hollbium uses hydroponics and special LED technology to grow greens, it uses 90% less water than conventional farming and provides yield all-year-round.
-          </p>
-          <h3>Biophilic design for wellbeing</h3>
-          <p>
-            Humans have a tendency to surround themselves with greenery in both times of celebration and sorrow, studies have shown that this makes us feel happier. We spend a great deal of time and money to maintain our decorative plants and Hollbium wants to take that a step further by surrounding office workers, students and city dwellers with edible greenery.
+            When we bring solutions into this world, we are responsible for ensuring it meets a genuine human need while minimizing the impact it has on the planet. We provide a concept that combines scandinavian design, sustainable food tech and people's well-being. Through Hollbium’s solutions you can make a positive impact on securing the city’s food supply in a sustainable way.
+            <br/>
+            <br/>
+            Hollbium combines hydroponics and LED technology with tailored solutions and services to enable everyone in successfully growing greens all-year-round.
           </p>
       </div>
       <div class="page" id="about">
@@ -118,31 +122,31 @@
           <div class="people">
             <div class="person">
               <img src="assets/Images/dp.jpg">
-              <h3>Diana Bao</h3>
-              <h4>CEO & Cofounder</h4>
-                diana@hollbium.com
-              <div class="social-container">social</div>
+              <h3>Bella Smolarski</h3>
+              <h4>Head of Product Development</h4>
+                bella@hollbium.com
+              <div class="social-container"></div>
             </div>
             <div class="person">
               <img src="assets/Images/dp.jpg">
-              <h3>Stina Tang</h3>
-              <h4>COO & Cofounder</h4>
-                stina@hollbium.com
-              <div class="social-container">social</div>
+              <h3>Diana Bao</h3>
+              <h4>CEO & Co-founder</h4>
+                diana@hollbium.com
+              <div class="social-container"></div>
             </div>
             <div class="person">
               <img src="assets/Images/dp.jpg">
               <h3>LouLou Pei</h3>
-              <h4>CTO & Cofounder</h4>
+              <h4>CTO & Co-founder</h4>
                 loulou@hollbium.com
-              <div class="social-container">social</div>
+              <div class="social-container"></div>
             </div>
             <div class="person">
               <img src="assets/Images/dp.jpg">
-              <h3>Isabella Smolarski</h3>
-              <h4>Head of Product Development</h4>
-                bella@hollbium.com
-              <div class="social-container">social</div>
+              <h3>Stina Tang</h3>
+              <h4>COO & Co-founder</h4>
+                stina@hollbium.com
+              <div class="social-container"></div>
             </div>
           </div>
         </div>
@@ -168,8 +172,12 @@
         </div>
         <div class="footcolumn">
           <h3>Contact</h3>
+          <p>
           Email: info@hollbium.com <br/>
-          Phone: 855 923 518
+          Phone: +46 855 923 518  <br/>
+          Visiting address <br/>
+          Medborgarplatsen 3, Söderhallarna
+          </p>
         </div>
       </div>
     </div>
@@ -210,4 +218,14 @@ $(function () {
     document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
   });
 });
+
+function myFunction() {
+  var big = document.getElementById("big-nav");
+  var small = document.getElementById("small-nav");
+  var width = screen.width;
+  if(width < 600) {
+    big.style.visibility="hidden";
+    small.style.visibility="visible";
+  }
+}
 </script>
