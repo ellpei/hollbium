@@ -7,6 +7,7 @@
 </head>
 <body>
   <div style="text-align:center">
+    <!--
     <nav class="navbar" id="navbar">
 
         <div class="minilogo">
@@ -22,9 +23,27 @@
               <li class="nav-item"><a href="#contact" class="nav-link">Get in touch</a></li>
         </ul>
 
-          <!-- <a href="javascript:void(0);" class="menu-icon" id="small-nav" onclick="myFunction()"><img src="assets/Icons/menu.svg" alt="Menu" width="50px"></a>
-            <div id="dropdown" class="dropdown-content"></div> -->
     </nav>
+  -->
+    <div class="topnav" id="myTopnav" style="nav.css">
+      <a href="#home"><img src="assets/Images/logo.svg" alt="Hollbium" width="18px"></a>
+     <a href="#home" class="active">Home</a>
+     <a href="#problem">Our problem with food</a>
+     <a href="#mission">Mission</a>
+     <a href="#how">How we help</a>
+     <div class="dropdown">
+       <button class="dropbtn">About
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <div class="dropdown-content">
+         <a href="#about">About Hollbium</a>
+         <a href="#team">Meet the team</a>
+       </div>
+     </div>
+     <a href="#contact">Contact</a>
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
     <div class="content">
       <div style="height: 30px; width: 100%">
       </div>
@@ -225,14 +244,13 @@ $(function () {
     document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
   });
 });
-
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
-  var big = document.getElementById("big-nav");
-  var small = document.getElementById("small-nav");
-  var width = screen.width;
-  if(width < 600) {
-    big.style.visibility="hidden";
-    small.style.visibility="visible";
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
 }
 </script>
