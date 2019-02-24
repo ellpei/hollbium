@@ -7,22 +7,22 @@ html {
   background-color: #4e5b4a;
   background-repeat: no-repeat;
   background-size: cover;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
 .header {
   padding-top: 50px;
-  /*min-height: 100vh;*/
   height: 100vh;
   max-width: inherit;
   width: 100%;
   align-self: center;
   display: block;
-  background: url("assets/Images/hollbiuminleaves3.png") no-repeat center center fixed;
+  background: url("assets/Images/hollbium-in-leaves.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center center;
 }
 
 button {
@@ -64,7 +64,7 @@ button:active {
 .footcolumn {
   padding-top: 40px;
   float:left;
-  width: 50%;
+  width: 33%;
 }
 /*
 #imagestrip {
