@@ -423,6 +423,11 @@ a:active {
  outline: none;
 }
 
+.topnav a .nav-social {
+  width: 40px;
+  float: right;
+}
+
 /* Add an active class to highlight the current page */
 .active {
  color: white;
