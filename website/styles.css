@@ -65,15 +65,7 @@ button:active {
   float:left;
   width: 33%;
 }
-/*
-#imagestrip {
-  background: url("assets/Images/sthlmgreen_wide.jpg") no-repeat center center;
 
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
-}
 .mission {
   min-height: inherit;
   width: 100%;
@@ -148,13 +140,6 @@ button:active {
   float: left;
   width: 33.33%;
 }
-/*
-.column-img {
-  float: left;
-  width: 25%;
-  min-width: 400px;
-  max-height: 100%;
-}*/
 
 .row-problem:after {
   content: "";
@@ -210,84 +195,6 @@ p {
 .quote {
   font-size: 24px;
   font-style: italic;
-}
-
-nav {
-  background-color: #4e5b4a;
-  top: 0;
-  position: fixed;
-  z-index:999;
-  overflow: hidden;
-  width: 100%;
-  font-family: 'Quicksand Book';
-  box-shadow: 0 15px 15px -15px rgb(0, 0, 0, 0.6);
-  height: 60px;
-}
-
-.navcontainer {
-  height: 30px;
-  top: 0;
-  padding-top: 0px;
-}
-.minilogo {
-  float: left;
-  height: inherit;
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-top: 0px;
-  top: 0;
-}
-/* Style the links inside the navigation bar */
-nav a {
-  float: left;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  display: flex;
-  padding: 2px;
-  padding-right: 20px;
-  outline: 0;
-}
-
-/* Change the color of links on hover */
-nav a:hover {
-  font-weight: bold;
-}
-
-.active {
-  text-decoration: underline;
-}
-
- .menu-icon {
-  vertical-align: middle;
-  position: absolute;
-  top: 0;
-  right: 0;
-  float:right;
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  nav a:not(:first-child) {display: none;}
-  nav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  nav.responsive {position: relative;}
-  nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 
 ul {
