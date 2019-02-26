@@ -36,6 +36,7 @@ html {
   align-self: center;
   display: block;
   text-align: center;
+  overflow: hidden;
 }
 
 button {
