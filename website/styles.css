@@ -10,20 +10,32 @@ html {
   background-size: cover;
   line-height: 2em;
   padding: 0px;
+  text-align: center;
+}
+
+.coverImg {
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  object-fit: contain;
+}
+
+.header h1 {
+  position: absolute;
+  text-align: center;
+  padding-top: 10%;
+  line-height: 1em;
+  left: 0;
+  right: 0;
+  font-size: 3.5vw;
 }
 
 .header {
-  padding-top: 50px;
-  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   align-self: center;
   display: block;
-  background: url("assets/Images/hollbium-in-leaves.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
+  text-align: center;
 }
 
 button {
@@ -31,6 +43,7 @@ button {
   border: none;
   color: white;
   padding: 15px 32px;
+  margin-bottom: 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -79,13 +92,13 @@ button:active {
 
 .page {
   min-height: 100vh;
-  height: 100vh;
-  /*background-color: rgb(0,0,0, 0.3);*/
+  max-height: 100vh;
   display: table-row;
   width: 100%;
   min-width: 100%;
-  margin-top: 60px 0px 0px 0px;
-  padding: 0px;
+  margin: 20px;
+  padding: 20px;
+  overflow: auto;
 }
 
 .about {
@@ -322,6 +335,7 @@ a:active {
  position: fixed;
  width: 100%;
  box-shadow: 0 15px 15px -15px rgb(0, 0, 0, 0.6);
+ z-index: 100;
 }
 
 /* Style the links inside the navigation bar */
@@ -415,7 +429,7 @@ a:active {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
  .topnav a:not(:first-child), .dropdown .dropbtn {
    display: none;
  }
@@ -426,7 +440,7 @@ a:active {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
  .topnav.responsive {position: fixed;
   /*background-color: rgba(78, 91, 74, 0.9);*/}}
  .topnav.responsive a.icon {
