@@ -132,9 +132,8 @@ button:active {
   flex-wrap: wrap;
   flex-direction: row;
 }
-
+/*
 .row-problem {
-  /*background-image: url("assets/Images/shopping_bag.png");*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -175,22 +174,67 @@ button:active {
   clear: both;
 }
 
-
-.partnerlogos {
-
+*/
+.row-problem {
   display: flex;
   text-align: center;
   width: 100%;
-  min-height: 200px;
+  min-height: 100px;
+  background-color: #ffffff;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.column-problem {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 25%;
+  min-width: 300px;
+  color:  #4e5b4a;
+}
+
+@media screen and (max-width: 1200px) {
+  .column-problem {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 300px;
+    width: 50%;
+    color:  #4e5b4a;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column-problem {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    color:  #4e5b4a;
+  }
+}
+
+.partnerlogos {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  min-height: 100px;
   background-color: #ffffff;
   align-content: center;
   flex-wrap: wrap;
 }
 
 .partnerlogos img {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   max-width: 200px;
+  width: 25%;
+}
+
+@media screen and (max-width: 900px) {
+  .partnerlogos img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+  }
 }
 
 body {
