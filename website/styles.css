@@ -409,6 +409,7 @@ a:active {
  text-align: center;
  font-size: 18px;
  padding: 14px 16px;
+ margin: 0px;
  text-decoration: none;
  outline: none;
 }
@@ -436,11 +437,19 @@ a:active {
 
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn{
+/*
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 16px;
+  text-decoration: none;
+  outline: none;
+
+  */
  font-size: 18px;
- border: none;
- outline: none;
- line-height: 36px;
- color: white;
+ margin: 0px;
  padding: 14px 16px;
  background-color: inherit;
  font-family: inherit;
@@ -450,7 +459,9 @@ a:active {
  text-align: center;
  border: none;
  text-decoration: none;
- margin: 0px;
+ border: none;
+ outline: none;
+ color: white;
 }
 
 
