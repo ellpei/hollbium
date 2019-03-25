@@ -8,7 +8,7 @@ html {
   background-color: #4e5b4a;
   background-repeat: no-repeat;
   background-size: cover;
-  line-height: 2em;
+  line-height: 1.5em;
   padding: 0px;
   text-align: center;
 }
@@ -24,9 +24,9 @@ html {
   position: absolute;
   text-align: center;
   padding-top: 10%;
+  left: 40px;
+  right: 40px;
   line-height: 1em;
-  left: 0;
-  right: 0;
   font-size: 3.5vw;
 }
 
@@ -48,7 +48,7 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 22px;
+  font-size: 100%;
   border-radius: 5px;
 }
 
@@ -74,7 +74,7 @@ button:active {
 
 .footer p{
   /*min-height: 300px;*/
-  font-size: 16px;
+  font-size: 90%;
 }
 
 .footcolumn {
@@ -240,7 +240,7 @@ button:active {
 body {
   font-family: 'Quicksand Book', Verdana, Geneva, sans-serif;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 100%;
   float: none;
   margin: 0px;
   min-width: 100%;
@@ -251,36 +251,34 @@ body {
 h1 {
   font: 'Quicksand Bold', Verdana, Geneva, sans-serif;
   padding-top: 10px;
-  font-size: 36px;
+  /*font-size: 36px;*/
+  font-size: 150%;
 }
 
 h2 {
   font: 'Quicksand Bold', Verdana, Geneva, sans-serif;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  font-size: 34px;
+  padding: 20px;
+  /*
+  font-size: 34px;*/
+  font-size: 140%;
 }
 
 h3 {
   font: 'Quicksand Bold', Verdana, Geneva, sans-serif;
-  font-size: 30px;
+  font-size: 130%;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 120%;
   padding: 0px;
   margin: 0px;
 }
 
 p {
   margin: 0% 10% 5% 10%;
-  font-size: 20px;
+  font-size: 100%;
 }
 
-.quote {
-  font-size: 24px;
-  font-style: italic;
-}
 
 ul {
   list-style-type: none;

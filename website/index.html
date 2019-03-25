@@ -10,25 +10,25 @@
 
     <div class="topnav" id="myTopnav" style="nav.css">
      <a href="#home"><img src="assets/Images/logo.svg" alt="Hollbium" width="18px"></a>
-     <a href="#home" class="active">Home</a>
-     <a href="#problem">Our problem with food</a>
-     <a href="#how">How we help</a>
-     <div class="dropdown">
-       <button class="dropbtn">About
+     <a href="#home" class="active" onclick="closeResponsiveNav()">Home</a>
+     <a href="#problem" onclick="closeResponsiveNav()">Our problem with food</a>
+     <a href="#how" onclick="closeResponsiveNav()">How we help</a>
+     <div class="dropdown" id="dropdown">
+       <button class="dropbtn">About ▾
          <i class="fa fa-caret-down"></i>
        </button>
        <div class="dropdown-content">
-         <a href="#mission">Our mission</a>
-         <a href="#about">About Hollbium</a>
-         <a href="#team">Meet the team</a>
+         <a href="#mission" onclick="closeResponsiveNav()">Our mission</a>
+         <a href="#about" onclick="closeResponsiveNav()">About Hollbium</a>
+         <a href="#team" onclick="closeResponsiveNav()">Meet the team</a>
        </div>
      </div>
-     <a href="#contact">Contact</a>
+     <a href="#contact" onclick="closeResponsiveNav()">Contact</a>
 
      <a href="https://www.facebook.com/hellohollbium" style="float:right;"><img src="assets/Icons/fb.svg"  class="nav-social" alt="facebook"/></a>
      <a href="https://www.linkedin.com/company/roots-n-shoots/" style="float:right;"><img src="assets/Icons/linkedin.svg"  class="nav-social" alt="Linkedin"/></a>
      <a href="https://www.instagram.com/hellohollbium/" style="float:right;"><img src="assets/Icons/insta.svg" class="nav-social" alt="Instagram"/></a>
-     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="assets/Icons/menu.svg" class="nav-social" alt="Menu"/></a>
+     <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNav()"><img src="assets/Icons/menu.svg" class="nav-social" alt="Menu"/></a>
 
     </div>
 
@@ -244,14 +244,28 @@ $(document).ready(function(){
       var target = ($(hash).offset().top);
       $('html, body').animate({
         scrollTop: target
-      }, 800, function(){
-
+      }, 200, function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
 });
+function closeResponsiveNav() {
+  var x = document.getElementById("myTopnav");
+  if(x.className == "topnav responsive") {
+    toggleResponsiveNav();
+  }
+}
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function toggleResponsiveNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 $(function () {
   $('.SendEmail').click(function (event) {
@@ -261,13 +275,5 @@ $(function () {
     document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
   });
 });
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+
 </script>
